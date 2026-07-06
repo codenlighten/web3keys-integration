@@ -1,0 +1,12 @@
+{
+  "name": "web3keys-integration",
+  "version": "1.0.0",
+  "description": "Integration kit for Web3Keys — SSO, redeemable tokens, and the redemption handshake.",
+  "license": "MIT",
+  "scripts": {
+    "example:redeem": "node examples/redeem-server"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
