@@ -128,6 +128,11 @@ Response:
 **Idempotency:** guard your payout on the token `origin` (+ `nonce`) so a re-submitted proof can't
 double-pay. Spending the token on-chain is the durable guard.
 
+**Give the user a receipt (recommended).** After a successful payout, deliver a signed
+`RedemptionReceipt` VC to their inbox (same call as §2's issuance notice, `credentialSubject:
+{ value, currency, app, token }`). Web3Keys shows it under **Recent redemptions** in their wallet —
+a persistent, verifiable record that the money was paid.
+
 ---
 
 ## 4. Paymail (optional)
